@@ -46,7 +46,10 @@ a{
 
 .title__container{
     height: 30rem;
-    background: lightskyblue;
+    background-image: url(/img/programacion.jpg);
+    background-size: cover;
+    background-position: center;
+    
     display:flex;
     align-items: center;
     justify-content: center;
@@ -78,6 +81,16 @@ a{
     box-shadow: 11px 10px 119px -9px rgba(0,0,0,1);
     color: white;
     text-align: center;
+}
+.container_flex-skills{
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    height: 10rem;
+    width: 50rem;
+}
+.container_flex-skills img{
+    padding: 1rem;
 }
 .container__flex__description{
     display: flex;
