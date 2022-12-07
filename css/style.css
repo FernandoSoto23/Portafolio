@@ -56,20 +56,25 @@ a{
     flex-direction: column;
 }
 .title__container__text--1 h2{
-    color: black;    
+    font-size: 4rem;
+    color: white;    
 }
 .title__container__text--2{
-
+    font-size: 2rem;
+    color: white;  
 }
-.title__container__text--3{
+.title__container__text--3{ 
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .title__container__text--3 img{
     width: 5rem;
 }
-
+.title__container__text--3 a{
+    color: var(--golden);
+}
 /* Main */
 .container__flex{
     background-color: rgb(39, 39, 39);
