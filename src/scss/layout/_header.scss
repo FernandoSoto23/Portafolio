@@ -1,0 +1,86 @@
+
+
+.App-header {
+    display: flex;
+    flex-direction: row;
+    background-color: #282c34;
+    height: 72rem;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+    .name{
+        font-size: 7rem;
+    }
+    .Panel-header-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #3b414c;
+        width: 100%;
+        height: 100%; 
+        img{
+            padding: 5rem;
+            width: 100%;
+        }
+        div{
+            margin: 0 auto;
+        }
+    }
+    .Panel-header-right{
+        height: 72rem;
+        width: 100%;
+        .navbar{
+           display: flex;
+           flex-direction: row;
+           justify-content: space-evenly;
+           list-style: none;
+           height: 20rem;
+           a{
+            text-decoration: none;
+            color: $blanco;
+           }
+        }
+
+        .console{
+            height: 10rem;
+            width: 50rem;
+            margin: 0 auto;
+            background-color: rgb(68, 68, 68);
+            border-radius: 2rem;
+            .console-header{
+                display: flex;
+                padding: 1rem;
+                background-color: $negro;
+                border-radius: 2rem 2rem 0rem 0rem;
+                .red{
+                    background-color: red;
+                    height: 2rem;
+                    width: 2rem;
+                    border-radius: 100%;
+                }
+                .yellow{
+                    background-color: yellow;
+                    height: 2rem;
+                    width: 2rem;
+                    border-radius: 100%;
+                }
+                .green{
+                    background-color: greenyellow;
+                    height: 2rem;
+                    width: 2rem;
+                    border-radius: 100%;
+                }
+            }
+
+        }
+    }
+  }
+
+
+
+body{
+    background-color: #3f4653;
+}

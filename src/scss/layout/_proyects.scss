@@ -1,0 +1,51 @@
+
+.proyect{
+    padding: 0;
+    .card-text{
+        display: none;
+    }
+    .imagen{
+        width: 100%;
+        align-items: center;
+    }
+    .card-imagen{
+    }
+}
+
+@keyframes slideaway {
+    from { display: block; }
+    to { transform: translateY(20rem); opacity: 0;height: 1rem;}
+  }
+  @keyframes example {
+    0%   {background-color: #ffffff;}
+    25%  {background-color: #a8d8ea;}
+    50%  {background-color: #52b2d8;}
+    100% {background-color: #0c87c1;}
+  }
+@keyframes quitar {
+    0%{display: block;}
+    10%{display: block; opacity: 0.9;}
+    20%{display: block; opacity: 0.8;}
+    30%{display: block; opacity: 0.7;}
+    40%{display: block; opacity: 0.6;}
+    50%{display: block; opacity: 0.5;}
+    60%{display: block; opacity: 0.4;}
+    70%{display: block; opacity: 0.3;}
+    80%{display: block; opacity: 0.2;}
+    90%{display: block; opacity: 0.1;}
+    100%{display: block; opacity: 0.0;}
+}
+
+.proyect:hover{
+    
+    animation: example 3000ms linear infinite alternate;
+    .card-imagen{
+        animation: quitar 500ms;
+        transition: visibility 0s, opacity 0.5s linear;
+        opacity: 0;
+        height: 1rem;
+    }
+    .card-text{
+        display: block;
+    }
+}
