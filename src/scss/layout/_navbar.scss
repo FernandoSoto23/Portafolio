@@ -1,0 +1,38 @@
+
+
+.navbar{
+    background-color: $negroAzulado;
+    width: 100%;
+    
+    ul{
+        margin-bottom: 0;
+        height: 10rem;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: flex-end;
+        gap: 3rem;
+        align-items: center;
+        text-decoration: none;
+        margin-right: 5rem;
+        font-size: 2rem;
+        li{
+            height: 100%;
+            width: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover{
+                background-color: $verde;
+            }
+            a{
+                color: $blanco;
+
+                
+            }
+        }
+
+        
+    }
+}

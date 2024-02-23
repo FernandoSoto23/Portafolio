@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Base */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -320,7 +321,7 @@ html {
 }
 
 body {
-  font-family: "Libre Franklin" sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -398,6 +399,10 @@ h3 {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .aling-imagen {
   max-width: 100%;
   max-height: 100%;
@@ -433,9 +438,18 @@ h3 {
   align-items: center;
 }
 
+.border-bottom {
+  border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+.border-top {
+  border-top: 1px solid rgb(170, 170, 170);
+}
+
 .content-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
 .line {
@@ -458,7 +472,28 @@ h3 {
 }
 
 /* Layout */
-.App-header {
+.header .navbar-header {
+  background-color: #282c34;
+  height: 100%;
+  display: flex;
+  width: 100%;
+}
+.header .navbar-header ul {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  list-style: none;
+  justify-content: flex-end;
+  height: 10rem;
+  align-items: center;
+}
+.header .navbar-header a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+.header .header-presentation {
   display: flex;
   flex-direction: row;
   background-color: #282c34;
@@ -468,66 +503,55 @@ h3 {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.App-header .name {
+.header .header-presentation .name {
   font-size: 7rem;
 }
-.App-header .Panel-header-left {
+.header .header-presentation .Panel-header-left {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #3b414c;
   width: 100%;
   height: 100%;
 }
-.App-header .Panel-header-left img {
-  padding: 5rem;
+.header .header-presentation .Panel-header-left img {
+  padding: 2rem;
   width: 100%;
 }
-.App-header .Panel-header-left div {
+.header .header-presentation .Panel-header-left div {
   margin: 0 auto;
 }
-.App-header .Panel-header-right {
+.header .header-presentation .Panel-header-right {
+  margin-top: 50rem;
   height: 72rem;
   width: 100%;
 }
-.App-header .Panel-header-right .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style: none;
-  height: 20rem;
-}
-.App-header .Panel-header-right .navbar a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-.App-header .Panel-header-right .console {
+.header .header-presentation .Panel-header-right .console {
   height: 10rem;
   width: 50rem;
   margin: 0 auto;
   background-color: rgb(68, 68, 68);
   border-radius: 2rem;
 }
-.App-header .Panel-header-right .console .console-header {
+.header .header-presentation .Panel-header-right .console .console-header {
   display: flex;
   padding: 1rem;
   background-color: #000000;
   border-radius: 2rem 2rem 0rem 0rem;
 }
-.App-header .Panel-header-right .console .console-header .red {
+.header .header-presentation .Panel-header-right .console .console-header .red {
   background-color: red;
   height: 2rem;
   width: 2rem;
   border-radius: 100%;
 }
-.App-header .Panel-header-right .console .console-header .yellow {
+.header .header-presentation .Panel-header-right .console .console-header .yellow {
   background-color: yellow;
   height: 2rem;
   width: 2rem;
   border-radius: 100%;
 }
-.App-header .Panel-header-right .console .console-header .green {
+.header .header-presentation .Panel-header-right .console .console-header .green {
   background-color: greenyellow;
   height: 2rem;
   width: 2rem;
@@ -535,18 +559,56 @@ h3 {
 }
 
 body {
-  background-color: #3f4653;
+  /* background-color: #3f4653; */
 }
 
-.proyect {
-  padding: 0;
+.layout-proyects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.proyect .card-text {
+.layout-proyects .button-more-proyects {
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  background-color: #4CB8B3;
+  height: 5rem;
+  padding: 1rem;
+  border: none;
+  font-size: 2rem;
+  margin-top: 5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.layout-proyects .proyect {
+  padding: 0;
+  box-shadow: 2px 1px 26px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 1px 26px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 1px 26px 0px rgba(0, 0, 0, 0.75);
+}
+.layout-proyects .proyect .card-text {
   display: none;
 }
-.proyect .imagen {
+.layout-proyects .proyect .card-opacity {
+  display: none;
+}
+.layout-proyects .proyect .imagen {
   width: 100%;
   align-items: center;
+}
+.layout-proyects .proyect .text-description {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  text-align: justify;
+  margin: 0;
+}
+.layout-proyects .proyect .text-proyect {
+  font-size: 3rem;
+  margin: 0;
+  border-radius: 1rem;
 }
 @keyframes slideaway {
   from {
@@ -560,16 +622,15 @@ body {
 }
 @keyframes example {
   0% {
-    background-color: #ffffff;
+    background-color: #fbfbfb;
   }
-  25% {
-    background-color: #a8d8ea;
-  }
-  50% {
-    background-color: #52b2d8;
-  }
+  /*     25%  {background-color: #a8d8ea;}
+      50%  {background-color: #52b2d8;} */
   100% {
-    background-color: #0c87c1;
+    background-color: #ed78e3;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(255, 46, 199, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(255, 46, 199, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(255, 46, 199, 0.9);
   }
 }
 @keyframes quitar {
@@ -617,15 +678,125 @@ body {
     opacity: 0;
   }
 }
-.proyect:hover {
+.layout-proyects .proyect:hover {
   animation: example 3000ms linear infinite alternate;
 }
-.proyect:hover .card-imagen {
+.layout-proyects .proyect:hover .card-imagen {
   animation: quitar 500ms;
   transition: visibility 0s, opacity 0.5s linear;
   opacity: 0;
-  height: 1rem;
+  height: 0rem;
 }
-.proyect:hover .card-text {
+.layout-proyects .proyect:hover .card-text {
   display: block;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-color: red;
+}
+.layout-proyects .proyect:hover .card-text h3, .layout-proyects .proyect:hover .card-text h4, .layout-proyects .proyect:hover .card-text p {
+  position: relative;
+  z-index: 110;
+  color: white;
+}
+.layout-proyects .proyect:hover .card-text .card-text-body {
+  padding: 2rem;
+}
+.layout-proyects .proyect:hover .card-opacity {
+  height: 100%;
+  position: relative;
+  top: -100%;
+  z-index: 100;
+  display: block;
+  background-color: black;
+  opacity: 0.7;
+  transition: opacity 0.5s linear;
+}
+
+.footer {
+  margin-top: 10rem;
+}
+
+.navbar {
+  background-color: #282c34;
+  width: 100%;
+}
+.navbar ul {
+  margin-bottom: 0;
+  height: 10rem;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 3rem;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 5rem;
+  font-size: 2rem;
+}
+.navbar ul li {
+  height: 100%;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul li:hover {
+  background-color: #4CB8B3;
+}
+.navbar ul li a {
+  color: #FFFFFF;
+}
+
+.experiencie-flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 5rem;
+}
+.experiencie-flex .card-experience {
+  border: 1px solid rgb(170, 170, 170);
+  /* background-color: $verde; */
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+.experiencie-flex h3, .experiencie-flex h2, .experiencie-flex p {
+  margin: 0;
+}
+.experiencie-flex h4 {
+  font-weight: bold;
+}
+
+.skills {
+  display: flex;
+  margin-bottom: 5rem;
+  /* skills.css */
+}
+.skills i {
+  font-size: 5rem;
+}
+.skills .stack {
+  border-top: 1px solid rgb(170, 170, 170);
+  border-bottom: 1px solid rgb(170, 170, 170);
+  padding: 5rem;
+  opacity: 0; /* Inicialmente, establece la opacidad en 0 para que los elementos estén ocultos */
+  animation: fade-in 1s ease forwards; /* Aplica la animación de desvanecimiento */
+}
+.skills .stack h2 {
+  font-size: 2rem;
+}
+.skills .stack .stack-flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

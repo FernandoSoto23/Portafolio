@@ -1,0 +1,16 @@
+.experiencie-flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 5rem;
+}
+.experiencie-flex .card-experience {
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+.experiencie-flex h3, .experiencie-flex h2, .experiencie-flex p {
+  margin: 0;
+}
+.experiencie-flex h4 {
+  font-weight: bold;
+}

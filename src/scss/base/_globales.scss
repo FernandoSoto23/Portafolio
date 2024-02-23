@@ -80,7 +80,9 @@ h3{
 .text-center{
     text-align: center;
 }
-
+.text-justify{
+    text-align: justify;
+}
 .aling-imagen{
     max-width: 100%;
     max-height: 100%;
@@ -117,9 +119,16 @@ h3{
     }
     
 }
+.border-bottom{
+    border-bottom: 1px solid $grisBordes;
+}
+.border-top{
+    border-top: 1px solid $grisBordes;
+}
 .content-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
 }
 .line{
     width: 95%;

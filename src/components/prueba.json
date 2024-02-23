@@ -1,62 +1,57 @@
 [
     {
         "id" : 1,
-        "nombre" : "Proyecto BienesRaices",
-        "imagen" : "https://http.cat/images/400.jpg",
-        "tecnologia" : {
-            "frontend" : "html,css,javascript",
-            "backend" : "C#, ASP.Net"
-        },
-        "Descripcion" : "Este proyecto fue generado..."
+        "name" : "Frontend Store",
+        "imagen" : "https://i.ibb.co/mRX31py/tienda-de-ropa.jpg",
+        "technology" : "Html y Css",
+        "description" : "Este proyecto fue realizado en el curso de Desarrollo web completo, se trabajo principalmente en el uso de grid",
+        "link" : "https://endearing-sprinkles-fdafb9.netlify.app",
+        "color": "#CC0000"
     },
     {
         "id" : 2,
-        "nombre" : "Proyecto BienesRaices",
-        "imagen" : "https://http.cat/images/400.jpg",
-        "tecnologia" : {
-            "frontend" : "html,css,javascript",
-            "backend" : "C#, ASP.Net"
-        },
-        "Descripcion" : "Este proyecto fue generado..."
+        "name" : "App Delivery",
+        "imagen" : "https://i.ibb.co/mhThyb3/App-Restaurant.jpg",
+        "technology" : "ReactJs,Sass,Gulp, Sql Server, Asp.net",
+        "description" : "Este proyecto fue realizado como proyecto personal para hacer una aplicacion de algun establecimiento de comida",
+        "link" : "",
+        "color": "#008B8B"
     },
     {
         "id" : 2,
-        "nombre" : "Proyecto BienesRaices",
-        "imagen" : "https://http.cat/images/400.jpg",
-        "tecnologia" : {
-            "frontend" : "html,css,javascript",
-            "backend" : "C#, ASP.Net"
-        },
-        "Descripcion" : "Este proyecto fue generado..."
+        "name" : "Proyecto BienesRaices",
+        "imagen" : "https://i.ibb.co/MGFTT6c/Bienes-Raices.jpg",
+        "technology" : "Html y Css",
+        "description" : "Este proyecto fue creado en php con myqsl",
+        "link" : "",
+        "color": "#FF1493"
     },
     {
         "id" : 2,
-        "nombre" : "Proyecto BienesRaices",
-        "imagen" : "https://http.cat/images/400.jpg",
-        "tecnologia" : {
-            "frontend" : "html,css,javascript",
-            "backend" : "C#, ASP.Net"
-        },
-        "Descripcion" : "Este proyecto fue generado..."
+        "name" : "Blog del cafe",
+        "imagen" : "https://i.ibb.co/G2RXRPp/Blog-Del-Cafe.jpg",
+        "technology" : "Html y Css",
+        "description" : "Este proyecto fue generado...",
+        "link" : "https://starlit-taffy-0d7856.netlify.app",
+        "color": "#4B0082"
     },
     {
         "id" : 2,
-        "nombre" : "Proyecto BienesRaices",
-        "imagen" : "https://http.cat/images/400.jpg",
-        "tecnologia" : {
-            "frontend" : "html,css,javascript",
-            "backend" : "C#, ASP.Net"
-        },
-        "Descripcion" : "Este proyecto fue generado..."
+        "name" : "Sistema de inventarios",
+        "imagen" : "https://i.ibb.co/mvXfhQ6/inventarios.jpg",
+        "technology" : "Html y Css",
+        "description" : "Este proyecto fue generado...",
+        "link" : "",
+        "color": "#995C00"
     },
     {
         "id" : 2,
-        "nombre" : "Proyecto BienesRaices",
-        "imagen" : "https://http.cat/images/400.jpg",
-        "tecnologia" : {
-            "frontend" : "html,css,javascript",
-            "backend" : "C#, ASP.Net"
-        },
-        "Descripcion" : "Este proyecto fue generado..."
+        "name" : "Catalogo de Clientes",
+        "imagen" : "https://i.ibb.co/VDQP5MJ/Angular.jpg",
+        "technology" : "Html y Css",
+        "description" : "Este proyecto fue generado...",
+        "link" : "",
+        "color": "#CCCC00"
     }
+    
 ]

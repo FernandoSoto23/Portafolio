@@ -1,0 +1,20 @@
+
+.experiencie-flex{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 5rem;
+    .card-experience{
+        border: 1px solid $grisBordes;
+        /* background-color: $verde; */
+        padding: 2rem;
+        border-radius: 1.5rem;
+    }
+    h3,h2,p{
+        margin: 0;
+        
+    }
+    h4{
+        font-weight: bold;
+    }
+}
